@@ -1,0 +1,84 @@
+* {
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: monospace,'Courier New', Courier, monospace;
+	background: url(imagenes/Logo.png);
+	background-repeat: repeat;
+}
+
+header {
+	background: #1586BB;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav .logo img {
+	width: 300px;
+}
+
+ul, ol {
+	list-style:none;
+}
+
+.nav > li {
+	/* float:left; */
+	display: inline-block;
+}
+
+.nav li a {
+	background-color:#1586BB;
+	color:#000;
+	text-decoration:none;
+	padding:10px 12px;
+	display:block;
+}
+
+.nav li a:hover {
+	background-color :#000 ;
+	color: #ffffff;
+}
+
+.nav li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+.nav li:hover > ul {
+	display:block;
+}
+
+.nav li ul li {
+	position:relative;
+}
+
+.nav li ul li ul {
+	right:-140px;
+	top:0px;
+}
+
+.regla{
+	position: fixed;
+	top: 140px;
+	left: 900px;
+}
+button{
+	padding: 20px 10px;
+	background-color: #1586BB;
+}
+input{
+	padding: 20px 50px;
+}
